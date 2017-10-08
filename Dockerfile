@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         scapy \
         sqlmap \
         wireshark \
+        tshark \
 	&& rm -rf /var/lib/apt/lists/* && \
     apt-get purge -y --auto-remove && \
     apt-get clean
